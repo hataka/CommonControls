@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReoGridApplication", "ReoGridApplication.csproj", "{D5CA72BB-EA8E-4875-83D7-3C5AC08B5636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReoGridPanel", "ReoGridPanel.csproj", "{41119CFB-0C5F-4E26-85E7-C743C05C1BD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5CA72BB-EA8E-4875-83D7-3C5AC08B5636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5CA72BB-EA8E-4875-83D7-3C5AC08B5636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5CA72BB-EA8E-4875-83D7-3C5AC08B5636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5CA72BB-EA8E-4875-83D7-3C5AC08B5636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41119CFB-0C5F-4E26-85E7-C743C05C1BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41119CFB-0C5F-4E26-85E7-C743C05C1BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41119CFB-0C5F-4E26-85E7-C743C05C1BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41119CFB-0C5F-4E26-85E7-C743C05C1BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DB0342FE-7BDD-4CD4-9E88-D41DA33CB0C2}
+	EndGlobalSection
+EndGlobal

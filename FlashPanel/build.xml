@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--// -*- mode: xml -*-  Time-stamp: <2017-07-01 9:53:04 kahata>-->
+<!--/*================================================================
+ * title: 
+ * file: build.xml
+ * path: F:\codingground\WisdomSoft\msnet\obj\build.xml
+ * url:  http://192.168.1.53/f/codingground/WisdomSoft/msnet/obj/build.xml
+ * created: Time-stamp: <2017-07-01 9:53:04 kahata>
+ * revision: $Id$
+ * Programmed By: kahata
+ * To compile:
+ * To run: 
+ * link: 
+ * description: 
+ *================================================================*/-->
+<project name="build.xml" basedir="." default="build" >
+<description>WisdomSoft buildfile</description>
+	<property environment="env"/>
+		<dirname property="ant.file.dir" file="${ant.file}"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="appname" value="gradle"/>
+
+  <!-- commandline ant test -Dparam1=aaa -Dparam2=bbb -->
+	<target name="property-test">
+    <echo message="ant.file   = ${ant.file}" />
+    <echo message="basedir    = ${basedir}" />
+    <echo message="projectDir = ${projectDir}" />
+    <echo message="curDir     = ${curDir}" />
+    <echo message="curFile    = ${curFile}" />
+	</target>
+	
+	<target name="build">
+		<description>basedirを ${projectDir} に変更して自分自身のtargetを実行</description>
+		<ant antfile="${ant.file.dir}\build_base.xml" dir="${projectDir}" target="build"/>
+	</target>
+
+  <target name="run">
+		<description>basedirを ${projectDir} に変更して自分自身のtargetを実行</description>
+		<ant antfile="${ant.file.dir}\build_base.xml" dir="${projectDir}" target="run"/>
+  </target>
+
+  <target name="runscript">
+		<description>basedirを ${projectDir} に変更して自分自身のtargetを実行</description>
+		<ant antfile="${ant.file.dir}\build_base.xml" dir="${projectDir}" target="runscript"/>
+  </target>
+
+  <target name="clean">
+		<description>basedirを ${projectDir} に変更して自分自身のtargetを実行</description>
+		<ant antfile="${ant.file.dir}\build_base.xml" dir="${projectDir}" target="clean"/>
+  </target>
+
+  <target name="clear">
+		<description>basedirを ${projectDir} に変更して自分自身のtargetを実行</description>
+		<ant antfile="${ant.file.dir}\build_base.xml" dir="${projectDir}" target="clear"/>
+  </target>
+
+  <target name="doxygen">
+		<description>basedirを ${projectDir} に変更して自分自身のtargetを実行</description>
+		<ant antfile="${ant.file.dir}\build_base.xml" dir="${projectDir}" target="doxygen"/>
+  </target>
+
+  <target name="open-src-in-fd">
+		<description>basedirを ${projectDir} に変更して自分自身のtargetを実行</description>
+		<ant antfile="${ant.file.dir}\build_base.xml" dir="${projectDir}" target="open_src_in_fd"/>
+  </target>
+
+	<!-- =================================================================== -->
+  <!-- Help on usage                                                       -->
+  <!-- =================================================================== -->
+  <target name="usage">
+		<description>basedirを ${projectDir} に変更して自分自身のtargetを実行</description>
+		<ant antfile="${ant.file.dir}\build_base.xml" dir="${projectDir}" target="usage"/>
+  </target>
+
+</project>

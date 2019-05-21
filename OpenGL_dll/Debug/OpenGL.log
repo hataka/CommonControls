@@ -1,0 +1,44 @@
+﻿  Stdafx.cpp
+  AssemblyInfo.cpp
+f:\virtualbox\sharefolder\mono\commoncontrols\opengl_dll\assemblyinfo.cpp(40): warning C4947: 'System::Security::Permissions::SecurityAction::RequestMinimum': 古い形式に設定されています。
+  f:\virtualbox\sharefolder\mono\commoncontrols\opengl_dll\assemblyinfo.cpp(40): note: メッセージ: 'Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'
+  Sample01.cpp
+  Lesson05.cpp
+  Lesson06.cpp
+  Lesson07.cpp
+  Lesson09.cpp
+  Lesson11.cpp
+  Lesson12.cpp
+  OpenGL.cpp
+  BMPLoader.cpp
+  Font.cpp
+  JapaneseFont.cpp
+  MesaBounce.cpp
+  MesaGears.cpp
+  Teapot.cpp
+  TextureBMP.cpp
+  gl03_1.cpp
+  gl03_2.cpp
+  gl03_3.cpp
+  gl03_4.cpp
+  コードを生成中...
+f:\virtualbox\sharefolder\mono\commoncontrols\opengl_dll\samplescene\font.cpp(164): warning C4793: BitmapFont::DrawStringA': ネイティブ関数としてコンパイルされました:
+  	vararg は /clr でサポートされていません
+f:\virtualbox\sharefolder\mono\commoncontrols\opengl_dll\samplescene\font.cpp(173): warning C4793: BitmapFont::DrawStringA': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+f:\virtualbox\sharefolder\mono\commoncontrols\opengl_dll\samplescene\font.cpp(175): warning C4793: BitmapFont::DrawStringA': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+f:\virtualbox\sharefolder\mono\commoncontrols\opengl_dll\samplescene\font.cpp(189): warning C4793: BitmapFont::DrawStringW': ネイティブ関数としてコンパイルされました:
+  	vararg は /clr でサポートされていません
+f:\virtualbox\sharefolder\mono\commoncontrols\opengl_dll\samplescene\font.cpp(199): warning C4793: BitmapFont::DrawStringW': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+f:\virtualbox\sharefolder\mono\commoncontrols\opengl_dll\samplescene\font.cpp(201): warning C4793: BitmapFont::DrawStringW': ネイティブ関数としてコンパイルされました:
+  	マネージ コードでサポートされていない組み込み型が見つかりました
+  コンパイル中...
+  gl04_1.cpp
+  gl05_1.cpp
+  gl06_1.cpp
+  gl06_2.cpp
+  コードを生成中...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+  OpenGL.vcxproj -> F:\VirtualBox\ShareFolder\mono\CommonControls\OpenGL_dll\Debug\OpenGL.dll

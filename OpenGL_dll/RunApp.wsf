@@ -1,0 +1,25 @@
+<job id="Alert">
+<script language="VBScript">
+    Option Explicit
+
+	if FileExists("OpenGL.exe") then
+		CreateObject("WScript.Shell").Run "cmd.exe /k, OpenGL.exe",1
+	elseif FileExists("Debug\OpenGL.exe") then
+		CreateObject("WScript.Shell").Run "cmd.exe /k, Debug\OpenGL.exe",1
+	elseif FileExists("bin\Release\OpenGL.exe") then
+		CreateObject("WScript.Shell").Run "cmd.exe /k, bin\Release\OpenGL.exe",1
+	end if
+
+	Function FolderExists(strFilePath)
+		Dim objFileSys
+		Set objFileSys = CreateObject("Scripting.FileSystemObject")
+		FolderExists = objFileSys.FolderExists(strFilePath)
+	End Function
+
+	Function FileExists(strFilePath)
+		Dim objFileSys
+		Set objFileSys = CreateObject("Scripting.FileSystemObject")
+		FileExists = objFileSys.FileExists(strFilePath)
+	End Function
+</script>
+</job>

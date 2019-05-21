@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{384FFFC8-7BCC-4181-8AD5-83B368646254}</ProjectGuid>
+    <RootNamespace>OpenGL</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27625.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>openGL32.lib;glu32.lib;gdi32.lib;kernel32.lib;User32.lib;GLAUX.LIB;ADVAPI32.LIB</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>cp $(OutDir)$(TargetFileName) $(SolutionDir)\$(TargetFileName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="komoto_Sample\Sample01.cpp" />
+    <ClCompile Include="NeHe_Lesson\Lesson05.cpp" />
+    <ClCompile Include="NeHe_Lesson\Lesson06.cpp" />
+    <ClCompile Include="NeHe_Lesson\Lesson07.cpp" />
+    <ClCompile Include="NeHe_Lesson\Lesson09.cpp" />
+    <ClCompile Include="NeHe_Lesson\Lesson11.cpp" />
+    <ClCompile Include="NeHe_Lesson\Lesson12.cpp" />
+    <ClCompile Include="OpenGL.cpp" />
+    <ClCompile Include="SampleScene\BMPLoader.cpp" />
+    <ClCompile Include="SampleScene\Font.cpp" />
+    <ClCompile Include="SampleScene\JapaneseFont.cpp" />
+    <ClCompile Include="SampleScene\MesaBounce.cpp" />
+    <ClCompile Include="SampleScene\MesaGears.cpp" />
+    <ClCompile Include="SampleScene\Teapot.cpp" />
+    <ClCompile Include="SampleScene\TextureBMP.cpp" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl03_1.cpp" />
+    <ClCompile Include="WisdomSoft\gl03_2.cpp" />
+    <ClCompile Include="WisdomSoft\gl03_3.cpp" />
+    <ClCompile Include="WisdomSoft\gl03_4.cpp" />
+    <ClCompile Include="WisdomSoft\gl04_1.cpp" />
+    <ClCompile Include="WisdomSoft\gl05_1.cpp" />
+    <ClCompile Include="WisdomSoft\gl06_1.cpp" />
+    <ClCompile Include="WisdomSoft\gl06_2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="komoto_Sample\Sample01.h" />
+    <ClInclude Include="NeHe_Lesson\Lesson05.h" />
+    <ClInclude Include="NeHe_Lesson\Lesson06.h" />
+    <ClInclude Include="NeHe_Lesson\Lesson07.h" />
+    <ClInclude Include="NeHe_Lesson\Lesson09.h" />
+    <ClInclude Include="NeHe_Lesson\Lesson11.h" />
+    <ClInclude Include="NeHe_Lesson\Lesson12.h" />
+    <ClInclude Include="OpenGL.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SampleScene.h" />
+    <ClInclude Include="SampleScene\BMPLoader.h" />
+    <ClInclude Include="SampleScene\Font.h" />
+    <ClInclude Include="SampleScene\JapaneseFont.h" />
+    <ClInclude Include="SampleScene\MesaBounce.h" />
+    <ClInclude Include="SampleScene\MesaGears.h" />
+    <ClInclude Include="SampleScene\Teapot.h" />
+    <ClInclude Include="SampleScene\TextureBMP.h" />
+    <ClInclude Include="Stdafx.h" />
+    <ClInclude Include="WisdomSoft\gl03_1.h" />
+    <ClInclude Include="WisdomSoft\gl03_2.h" />
+    <ClInclude Include="WisdomSoft\gl03_3.h" />
+    <ClInclude Include="WisdomSoft\gl03_4.h" />
+    <ClInclude Include="WisdomSoft\gl04_1.h" />
+    <ClInclude Include="WisdomSoft\gl05_1.h" />
+    <ClInclude Include="WisdomSoft\gl06_1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

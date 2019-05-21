@@ -1,0 +1,54 @@
+<job id="Sakura_MultiOpen">
+<script language="JScript" src="F:\FrameWork\scripts\common_lib.js"></script>
+<script language="JScript">
+
+	var strScriptFolder;
+	//スクリプト名を含まないフルパスを編集する
+	strScriptFolder = String(WScript.ScriptFullName).replace(WScript.ScriptName,"");
+	//スクリプト名を含むフルパス
+	//WScript.echo("スクリプト名を含む　　　" + WScript.ScriptFullName);
+	//スクリプト名を含まないフルパス
+	//WScript.echo("スクリプト名を含まない　" + strScriptFolder);
+	//WScript.echo(fileext(WScript.ScriptFullName)); //OK
+
+	var objApl;
+	var objFolder;
+	var objFolderItems;
+	var objItem;
+	var i;
+	var strOpenFileName ='';
+	
+	//①シェルアプリケーションオブジェクトを作成します
+	objApl = new ActiveXObject("Shell.Application");
+	//②探りを入れたいフォルダのオブジェクトを作成します
+	objFolder = objApl.NameSpace(strScriptFolder);
+	//③フォルダオブジェクトから、入っているファイルやフォルダの全情報を取得します
+	objFolderItems = objFolder.Items();
+	//WScript.echo(objFolderItems.Count);
+
+	//④何個入っていたかは、Countで参照
+	for(i=0;i<objFolderItems.Count;i++) {
+		//⑤ファイルやフォルダの情報を１コ取り出します
+		objItem = objFolderItems.Item(i);
+		//⑥取り出した物がファイルかフォルダかを判定
+		if (objItem.IsFolder==false && in_array(fileext(objItem.Name), ['cpp', 'h', 'pro','rc','c','cs','java'])) {
+       //⑦取り出した物がフォルダの場合のメッセージ
+//			WScript.echo(objItem.Name);
+			strOpenFileName += ' ' + strScriptFolder+objItem.Name;
+		}
+	}
+	//WScript.echo(strOpenFileName);
+	
+	var vbHide = 0             //ウィンドウを非表示
+	var vbNormalFocus = 1      //通常のウィンドウ、かつ最前面のウィンドウ
+	var vbMinimizedFocus = 2   //最小化、かつ最前面のウィンドウ
+	var vbMaximizedFocus = 3   //最大化、かつ最前面のウィンドウ
+	var vbNormalNoFocus = 4    //通常のウィンドウ、ただし、最前面にはならない
+	var vbMinimizedNoFocus = 6 //最小化、ただし、最前面にはならない
+
+	var objWShell = new ActiveXObject("WScript.Shell")
+	objWShell.Run("C:\\TiuDevTools\\sakura\\multifile\\multifile.exe" + strOpenFileName,vbNormalFocus, false)
+	//WScript.Echo("AVIPreview.exeを実行しました！")
+	objWShell = null
+</script>
+</job>

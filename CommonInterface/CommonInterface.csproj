@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5D2C592-B7DD-4436-AA49-D0C0401AE32D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonInterface</RootNamespace>
+    <AssemblyName>CommonInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonLibrary\DeComment.cs" />
+    <Compile Include="CommonLibrary\FileHandler.cs" />
+    <Compile Include="CommonLibrary\IconExtractor.cs" />
+    <Compile Include="CommonLibrary\ImageHander.cs" />
+    <Compile Include="CommonLibrary\ImageKonverter.cs" />
+    <Compile Include="CommonLibrary\IniFileHandler.cs" />
+    <Compile Include="CommonLibrary\Lib.cs" />
+    <Compile Include="CommonLibrary\StringHandler.cs" />
+    <Compile Include="Controls\Common.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScrollBarEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ShellContextMenu.cs" />
+    <Compile Include="Controls\ToolStripEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DistroConfig.cs" />
+    <Compile Include="Helpers\ConfigHelper.cs" />
+    <Compile Include="Helpers\DrawHelper.cs" />
+    <Compile Include="Helpers\FileHelper.cs" />
+    <Compile Include="Helpers\FileInspector.cs" />
+    <Compile Include="Helpers\FolderHelper.cs" />
+    <Compile Include="Helpers\JvmConfigHelper.cs" />
+    <Compile Include="Helpers\PathHelper.cs" />
+    <Compile Include="Helpers\ProcessHelper.cs" />
+    <Compile Include="Helpers\ResourceHelper.cs" />
+    <Compile Include="Helpers\ScaleHelper.cs" />
+    <Compile Include="Helpers\SnippetHelper.cs" />
+    <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="interfaces.cs" />
+    <Compile Include="Localization\Attributes.cs" />
+    <Compile Include="Localization\LocaleVersion.cs" />
+    <Compile Include="Localization\TextHelper.cs" />
+    <Compile Include="Managers\DocumentManager.cs" />
+    <Compile Include="Managers\Enumerators.cs" />
+    <Compile Include="Managers\ErrorManager.cs" />
+    <Compile Include="Managers\EventManager.cs" />
+    <Compile Include="Managers\EventTypes.cs" />
+    <Compile Include="Managers\ImageListManager.cs" />
+    <Compile Include="Managers\TraceManager.cs" />
+    <Compile Include="Ookii.Dialogs\Interop\COMGuids.cs" />
+    <Compile Include="Ookii.Dialogs\Interop\ErrorHelper.cs" />
+    <Compile Include="Ookii.Dialogs\Interop\ShellComInterfaces.cs" />
+    <Compile Include="Ookii.Dialogs\Interop\ShellWrapperDefinitions.cs" />
+    <Compile Include="Ookii.Dialogs\Interop\WindowHandleWrapper.cs" />
+    <Compile Include="Ookii.Dialogs\NativeMethods.cs" />
+    <Compile Include="Ookii.Dialogs\SafeHandles.cs" />
+    <Compile Include="Ookii.Dialogs\VistaFolderBrowserDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ookii.Dialogs\VistaFolderNameEditor.cs" />
+    <Compile Include="PluginBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utilities\ExtensionClasses.cs" />
+    <Compile Include="Utilities\ObjectSerializer.cs" />
+    <Compile Include="Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ja_JP.resX">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSPad.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ookii.Dialogs\license.txt" />
+    <Content Include="Ookii.Dialogs\VistaFolderBrowserDialog.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,65 @@
+[Config]
+Compilator.FileName=cmd.exe
+Compilator.PSPar=/k, build_msvc2008.bat
+Compilator.Run=%Dir%\Lesson05.exe
+Compilator.DefaultDir=%Dir%
+Compilator.SaveAll=1
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+Prog1=Console Output,cmd.exe /k, %Dir%%ProjectName%.exe§
+Prog2=Windows Application,%Dir%%ProjectName%.exe§
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+Lesson05
+	-bin
+		-Release
+			Release\Lesson05.exe
+		+Debug
+			Debug\Lesson05.dll
+	-Header
+		Stdafx.h
+		resource.h
+		Lesson05.h
+		AssemblyInfo.cpp
+	+Source
+		Lesson05.cpp
+		Stdafx.cpp
+		Lesson05.cpp
+	-Resource
+		app.rc
+		app.ico
+	-Dist
+		RunApp.wsf
+		Sakura_MultiOpen.wsf
+	+Makefile
+		build_msvc2008.bat
+		build_msvc2010.bat
+	+Project
+		Lesson05.ppr
+		Lesson05.vcproj
+		Lesson05.sln
+	+Documentation
+		ReadMe.txt
+	-References
+[Open project files]
+0=Lesson05.cpp
+1=Lesson05.h
+2=build_msvc2008.bat
+[Selected Project Files]
+Main=
+Selected=build_msvc2008.bat
+[Lesson05.cpp]
+TopLine=1
+Caret=33,7
+[Lesson05.h]
+TopLine=1
+Caret=1,1
+[build_msvc2008.bat]
+TopLine=3
+Caret=1,2

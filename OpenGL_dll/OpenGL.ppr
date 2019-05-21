@@ -1,0 +1,54 @@
+[Config]
+Compilator.FileName=cmd.exe
+Compilator.PSPar=/k, build_msvc6.bat
+Compilator.Run=%Dir%\OpenGL.exe
+Compilator.DefaultDir=%Dir%
+Compilator.SaveAll=1
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+Prog1=Console Output,cmd.exe /k, %Dir%%ProjectName%.exe§
+Prog2=Windows Application,%Dir%%ProjectName%.exe§
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+OpenGL
+	-bin
+		OpenGL.exe
+		-Release
+			Release\OpenGL.exe
+		+Debug
+			Debug\OpenGL.exe
+	-Header
+	+Source
+		OpenGL.cpp
+	-Resource
+		Resource.rc
+	-Dist
+	-Makefile
+		build_msvc6.bat
+		build_msvc2008.bat
+		build_msvc2010.bat
+		Makefile
+	-Project
+		OpenGL.ppr
+		OpenGL.dsw
+		OpenGL.dsp
+		OpenGL.vcproj
+		OpenGL.sln.old
+		OpenGL.sln
+		OpenGL.vcxproj
+	-Documentation
+	-References
+[Open project files]
+0=OpenGL.cpp
+[Selected Project Files]
+Main=OpenGL.cpp
+Selected=OpenGL.cpp
+[OpenGL.cpp]
+TopLine=1
+Caret=1,1

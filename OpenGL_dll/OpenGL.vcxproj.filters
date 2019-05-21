@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\NeHe Lesson">
+      <UniqueIdentifier>{a931fc36-f38e-4290-a7b3-1eb95d5f1780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\SampleScene">
+      <UniqueIdentifier>{ac098032-5741-46e4-bd2b-07e5afccb3a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\komoto">
+      <UniqueIdentifier>{23a93304-0479-4565-a7fe-3eb80fa8875c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\WisdomSoft">
+      <UniqueIdentifier>{0fddc23e-900e-4645-ae8b-3077d1845dab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\NeHe Lesson">
+      <UniqueIdentifier>{e6fef7cb-e027-433b-9217-6741906fd5f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\SampleScene">
+      <UniqueIdentifier>{4be21b6a-96fe-46f0-a80a-ed81a2b02a75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\komoto">
+      <UniqueIdentifier>{18e369b3-a258-4124-b11b-b4bd0cd9fe1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\WisdomSoft">
+      <UniqueIdentifier>{728e327c-1d22-44ca-998f-ed1d922a9a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGL.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="NeHe_Lesson\Lesson05.cpp">
+      <Filter>ソース ファイル\NeHe Lesson</Filter>
+    </ClCompile>
+    <ClCompile Include="NeHe_Lesson\Lesson06.cpp">
+      <Filter>ソース ファイル\NeHe Lesson</Filter>
+    </ClCompile>
+    <ClCompile Include="NeHe_Lesson\Lesson07.cpp">
+      <Filter>ソース ファイル\NeHe Lesson</Filter>
+    </ClCompile>
+    <ClCompile Include="NeHe_Lesson\Lesson09.cpp">
+      <Filter>ソース ファイル\NeHe Lesson</Filter>
+    </ClCompile>
+    <ClCompile Include="NeHe_Lesson\Lesson11.cpp">
+      <Filter>ソース ファイル\NeHe Lesson</Filter>
+    </ClCompile>
+    <ClCompile Include="NeHe_Lesson\Lesson12.cpp">
+      <Filter>ソース ファイル\NeHe Lesson</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleScene\BMPLoader.cpp">
+      <Filter>ソース ファイル\SampleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleScene\Font.cpp">
+      <Filter>ソース ファイル\SampleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleScene\JapaneseFont.cpp">
+      <Filter>ソース ファイル\SampleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleScene\MesaBounce.cpp">
+      <Filter>ソース ファイル\SampleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleScene\MesaGears.cpp">
+      <Filter>ソース ファイル\SampleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleScene\Teapot.cpp">
+      <Filter>ソース ファイル\SampleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleScene\TextureBMP.cpp">
+      <Filter>ソース ファイル\SampleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="komoto_Sample\Sample01.cpp">
+      <Filter>ソース ファイル\komoto</Filter>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl03_1.cpp">
+      <Filter>ソース ファイル\WisdomSoft</Filter>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl03_2.cpp">
+      <Filter>ソース ファイル\WisdomSoft</Filter>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl03_3.cpp">
+      <Filter>ソース ファイル\WisdomSoft</Filter>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl03_4.cpp">
+      <Filter>ソース ファイル\WisdomSoft</Filter>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl04_1.cpp">
+      <Filter>ソース ファイル\WisdomSoft</Filter>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl05_1.cpp">
+      <Filter>ソース ファイル\WisdomSoft</Filter>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl06_1.cpp">
+      <Filter>ソース ファイル\WisdomSoft</Filter>
+    </ClCompile>
+    <ClCompile Include="WisdomSoft\gl06_2.cpp">
+      <Filter>ソース ファイル\WisdomSoft</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenGL.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Stdafx.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="NeHe_Lesson\Lesson05.h">
+      <Filter>ヘッダー ファイル\NeHe Lesson</Filter>
+    </ClInclude>
+    <ClInclude Include="NeHe_Lesson\Lesson06.h">
+      <Filter>ヘッダー ファイル\NeHe Lesson</Filter>
+    </ClInclude>
+    <ClInclude Include="NeHe_Lesson\Lesson07.h">
+      <Filter>ヘッダー ファイル\NeHe Lesson</Filter>
+    </ClInclude>
+    <ClInclude Include="NeHe_Lesson\Lesson09.h">
+      <Filter>ヘッダー ファイル\NeHe Lesson</Filter>
+    </ClInclude>
+    <ClInclude Include="NeHe_Lesson\Lesson11.h">
+      <Filter>ヘッダー ファイル\NeHe Lesson</Filter>
+    </ClInclude>
+    <ClInclude Include="NeHe_Lesson\Lesson12.h">
+      <Filter>ヘッダー ファイル\NeHe Lesson</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleScene\BMPLoader.h">
+      <Filter>ヘッダー ファイル\SampleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleScene\Font.h">
+      <Filter>ヘッダー ファイル\SampleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleScene\JapaneseFont.h">
+      <Filter>ヘッダー ファイル\SampleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleScene\MesaBounce.h">
+      <Filter>ヘッダー ファイル\SampleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleScene\MesaGears.h">
+      <Filter>ヘッダー ファイル\SampleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleScene\Teapot.h">
+      <Filter>ヘッダー ファイル\SampleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleScene\TextureBMP.h">
+      <Filter>ヘッダー ファイル\SampleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="komoto_Sample\Sample01.h">
+      <Filter>ヘッダー ファイル\komoto</Filter>
+    </ClInclude>
+    <ClInclude Include="WisdomSoft\gl03_1.h">
+      <Filter>ヘッダー ファイル\WisdomSoft</Filter>
+    </ClInclude>
+    <ClInclude Include="WisdomSoft\gl03_2.h">
+      <Filter>ヘッダー ファイル\WisdomSoft</Filter>
+    </ClInclude>
+    <ClInclude Include="WisdomSoft\gl03_3.h">
+      <Filter>ヘッダー ファイル\WisdomSoft</Filter>
+    </ClInclude>
+    <ClInclude Include="WisdomSoft\gl03_4.h">
+      <Filter>ヘッダー ファイル\WisdomSoft</Filter>
+    </ClInclude>
+    <ClInclude Include="WisdomSoft\gl04_1.h">
+      <Filter>ヘッダー ファイル\WisdomSoft</Filter>
+    </ClInclude>
+    <ClInclude Include="WisdomSoft\gl05_1.h">
+      <Filter>ヘッダー ファイル\WisdomSoft</Filter>
+    </ClInclude>
+    <ClInclude Include="WisdomSoft\gl06_1.h">
+      <Filter>ヘッダー ファイル\WisdomSoft</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

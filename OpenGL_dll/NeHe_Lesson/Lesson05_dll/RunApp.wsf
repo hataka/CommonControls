@@ -1,0 +1,25 @@
+<job id="Alert">
+<script language="VBScript">
+    Option Explicit
+
+	if FileExists("Lesson05.exe") then
+		CreateObject("WScript.Shell").Run "cmd.exe /k, Lesson05.exe",1
+	elseif FileExists("Debug\Lesson05.exe") then
+		CreateObject("WScript.Shell").Run "cmd.exe /k, Debug\Lesson05.exe",1
+	elseif FileExists("bin\Release\Lesson05.exe") then
+		CreateObject("WScript.Shell").Run "cmd.exe /k, bin\Release\Lesson05.exe",1
+	end if
+
+	Function FolderExists(strFilePath)
+		Dim objFileSys
+		Set objFileSys = CreateObject("Scripting.FileSystemObject")
+		FolderExists = objFileSys.FolderExists(strFilePath)
+	End Function
+
+	Function FileExists(strFilePath)
+		Dim objFileSys
+		Set objFileSys = CreateObject("Scripting.FileSystemObject")
+		FileExists = objFileSys.FileExists(strFilePath)
+	End Function
+</script>
+</job>
